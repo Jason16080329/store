@@ -1,5 +1,6 @@
 package com.newer.pet.domain;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -10,8 +11,9 @@ import java.util.List;
  */
 public class Account {
 	// 基本信息
-	private Integer useid;
+	private Integer uid;
 	private String username;
+	
 	private String password;
 	private String sex;
 	private Integer age;
@@ -23,7 +25,28 @@ public class Account {
 	private Cart cart;
 
 	// 订单
-	private List<Order> orderList;
+	private List<Order> orderList = new LinkedList<>();
+	
+	/**
+	 * 用户的地址（内部内，只在Account这个类中用到，因为可能有多个地址）
+	 * @author acer
+	 *
+	 */
+	public static class Address{
+		String province;
+		String city;
+		String street;
+		String name;
+		String phone;
+	}
+	
+	public Integer getUid() {
+		return uid;
+	}
+
+	public void setUid(Integer uid) {
+		this.uid = uid;
+	}
 
 	public String getUsername() {
 		return username;

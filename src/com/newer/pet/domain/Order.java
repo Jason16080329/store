@@ -9,9 +9,8 @@ import java.util.Date;
  *
  */
 public class Order {
-	private String userid;
 	//下订单用户
-	private String username;
+	private String uid;
 	//订单日期
 	private Date orderDate;
 	//订单总金额
