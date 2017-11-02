@@ -17,9 +17,7 @@ public class Account {
 	private String password;
 	private String sex;
 	private Integer age;
-	private String email;
-	private String phone;
-	private String address;
+	private Address address;
 
 	// 购物车
 	private Cart cart;
@@ -80,27 +78,12 @@ public class Account {
 		this.age = age;
 	}
 
-	public String getEmail() {
-		return email;
-	}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
-	public String getAddress() {
+	public Address getAddress() {
 		return address;
 	}
 
-	public void setAddress(String address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 

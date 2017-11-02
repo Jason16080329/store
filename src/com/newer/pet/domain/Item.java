@@ -5,7 +5,7 @@ import java.text.Bidi;
 
 public class Item {
 	//订单中某一项的编号
-	private int id;
+	private int oid;
 	//流水号
 	private int num;
 	
