@@ -9,4 +9,8 @@ public interface AppInfo {
 	 * 商品分类列表
 	 */
 	String APP_CATEGORY_LIST = "categories";
+	/**
+	 * 商品列表
+	 */
+	String APP_PRODUCT_LIST="products";
 }
