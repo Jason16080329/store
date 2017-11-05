@@ -27,6 +27,11 @@ public class Category {
 		plist.add(p);
 	}
 	
+	@Override
+	public String toString() {
+		return "Category [cid=" + cid + ", cname=" + cname + ", cdescription=" + cdescription + ", plist=" + plist
+				+ "]";
+	}
 	public String getCid() {
 		return cid;
 	}
